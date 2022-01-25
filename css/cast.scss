@@ -1,0 +1,42 @@
+
+.castWrapper {
+    width: 95%;
+    max-width: 800px;
+}
+
+.castList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    li {
+        text-align: center;
+        margin: 10px 3px;
+        .castPhoto {
+            height: 140px;
+            border-radius: 3px;
+            box-shadow: 0 0 3px rgb(173, 173, 173);
+        }
+        .name {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media (min-width: 550px) {
+    .castList {
+        li {
+            margin: 20px 8px;
+            .castPhoto {
+                height: 200px;
+                border-radius: 3px;
+                box-shadow: 0 0 8px rgb(173, 173, 173);
+            }
+            .name {
+                font-size: 13px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

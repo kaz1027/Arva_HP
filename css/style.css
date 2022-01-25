@@ -77,12 +77,12 @@ h2 {
   position: fixed;
   z-index: 999;
   /*ナビのスタート位置と形状*/
-  bottom: -120%;
+  top: -120%;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   /*ナビの高さ*/
-  background: #999;
+  background: #e9e9e9;
   /*動き*/
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
@@ -90,7 +90,7 @@ h2 {
 
 /*アクティブクラスがついたら位置を0に*/
 #g-nav.panelactive {
-  bottom: 0;
+  top: 0;
 }
 
 /*ナビゲーションの縦スクロール*/
@@ -99,7 +99,7 @@ h2 {
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   /*表示する高さ*/
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -114,6 +114,7 @@ h2 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  font-family: 'AvantGarde-Demi', sans-serif;
 }
 
 /*リストのレイアウト設定*/
@@ -204,14 +205,14 @@ h2 {
   line-height: 25px;
 }
 
-article {
+#top-bannar {
   position: fixed;
   top: 100px;
   z-index: 9;
   left: 5%;
 }
 
-article img {
+#top-bannar img {
   width: 80px;
 }
 
@@ -298,6 +299,10 @@ h2:before {
   width: 10px;
 }
 
+.topBtnWrapper:hover {
+  background-color: #525252;
+}
+
 .btn {
   padding: 15px;
   color: #fff;
@@ -317,6 +322,7 @@ h2:before {
   margin: 0 auto 50px auto !important;
   width: 80%;
   max-width: 500px;
+  border: 5px solid #afaeae;
 }
 
 .slider img {
@@ -571,6 +577,9 @@ footer {
 /* PC画面
 /*===========================================================*/
 @media (min-width: 767px) {
+  /*===========================================================*/
+  /* ヘッダー
+/*===========================================================*/
   #mob-header {
     display: none;
   }
@@ -585,7 +594,50 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .pc-h-top {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 120px;
+  }
   h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  h1 img {
+    width: 200px;
+  }
+  .shop-info {
+    position: absolute;
+    right: 0;
+  }
+  .shop-info .pcTel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: toppan-bunkyu-midashi-min-st,serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+  }
+  .shop-info .pcTel img {
+    width: 25px;
+    margin-right: 10px;
+  }
+  .shop-info .pcOpen {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -595,12 +647,133 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 10px;
+  }
+  .shop-info .pcOpen .openText {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .shop-info .pcOpen .openTime {
+    font-size: 14px;
+  }
+  .gnavi {
+    background-color: #000;
+    color: #fff;
+    padding: 18px 0;
+  }
+  .gnavi li {
+    padding: 5px 30px;
+    font-size: 14px;
+  }
+  .gnavi li + li {
+    border-left: 1px solid #fff;
+  }
+  .gnavi li:hover {
+    color: #949494;
+  }
+  .gnavi .h-sns {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .gnavi .h-sns img {
+    width: 20px;
+    margin-left: 5px;
+    padding: 0;
+  }
+  .gnavi .pcHeader-sns {
+    padding: 3px 30px;
+  }
+  .pc-header-text {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .header-text {
+    display: none;
+  }
+  #top-bannar {
+    position: fixed;
+    top: 170px;
+    z-index: 9;
+    left: 15%;
+  }
+  #top-bannar img {
+    width: 200px;
+  }
+  #top-bannar.HeightMinBanner {
+    position: fixed;
+    top: 100px;
+  }
+  /*HeightMinというクラス名がついたら高さを小さく、上部固定に*/
+  #pc-nav.HeightMin {
+    position: fixed;
+    z-index: 999;
+    /*最前面へ*/
+    -webkit-animation: DownAnime 0.5s forwards;
+            animation: DownAnime 0.5s forwards;
+    top: 0;
+    width: 100%;
+  }
+  #pc-nav.HeightMin .gnavi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  @-webkit-keyframes DownAnime {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-170px);
+              transform: translateY(-170px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes DownAnime {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-170px);
+              transform: translateY(-170px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  /*===========================================================*/
+  /* キャスト
+/*===========================================================*/
+  #cast {
+    margin-top: 70px;
+  }
+  h2 {
+    margin: 0 auto 70px auto;
   }
   footer {
     display: none;
   }
 }
 
+/*===========================================================*/
+/* スマホの時に消すもの
+/*===========================================================*/
 @media (max-width: 767px) {
   #pc-header {
     display: none;
