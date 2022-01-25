@@ -1,0 +1,50 @@
+.castWrapper {
+  width: 95%;
+  max-width: 800px;
+}
+
+.castList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.castList li {
+  text-align: center;
+  margin: 10px 3px;
+}
+
+.castList li .castPhoto {
+  height: 140px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px #adadad;
+          box-shadow: 0 0 3px #adadad;
+}
+
+.castList li .name {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+@media (min-width: 550px) {
+  .castList li {
+    margin: 20px 8px;
+  }
+  .castList li .castPhoto {
+    height: 200px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 8px #adadad;
+            box-shadow: 0 0 8px #adadad;
+  }
+  .castList li .name {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=cast.css.map */

@@ -1,0 +1,297 @@
+@charset "UTF-8";
+#recruit {
+  margin-top: 120px;
+  max-width: 1200px;
+}
+
+.recruitWrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recruitBannar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recruitBannar img {
+  height: 240px;
+  margin: 0 10px 20px 10px;
+}
+
+/*===========================================================*/
+/* 嬉しい3つのポイント
+/*===========================================================*/
+.recruitBannar2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recruitBannar2 img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.recruitDrection {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recruitDrection .recruitDrectionContents {
+  border: solid 1px #775656;
+  background-color: #FFF7F7;
+  margin: 20px 0;
+  padding: 0 5%;
+  border-radius: 10px;
+}
+
+.recruitDrection .recruitDrectionContents h3 {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #AD5454;
+  border-bottom: solid 1px #775656;
+  border-bottom-style: dashed;
+  font-weight: bold;
+}
+
+.recruitDrection .recruitDrectionContents p {
+  font-size: 13px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 25px;
+  color: #775656;
+}
+
+/*===========================================================*/
+/* PC応募画面
+/*===========================================================*/
+.recruit-pcContact {
+  border: solid 1px #775656;
+  border-radius: 0 0 10px 10px;
+  width: 90%;
+  max-width: 800px;
+  background-color: #FFDDDD;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.recruit-pcContact .recruit-pcContact-topText {
+  display: block;
+  background-color: #775656;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 13px;
+}
+
+.recruit-pcContact .recruit-pcContact-tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #775656;
+  margin: 30px 0;
+}
+
+.recruit-pcContact .recruit-pcContact-tel .recruit-aboutShop {
+  text-align: left;
+}
+
+.recruit-pcContact .recruit-pcContact-tel .recruit-aboutShop .Name {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.recruit-pcContact .recruit-pcContact-tel .recruit-aboutShop .Time {
+  font-size: 13px;
+}
+
+.recruit-pcContact .recruit-pcContact-tel .recruitTel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recruit-pcContact .recruit-pcContact-tel .recruitTel .icon {
+  width: 35px;
+  margin-right: 5px;
+}
+
+.recruit-pcContact .recruit-pcContact-tel .recruitTel .tel {
+  font-size: 50px;
+  font-family: toppan-bunkyu-midashi-min-st,serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.recruit-pcContact .recruit-pcBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.recruit-pcContact .recruit-pcBtn .r-pcBtn {
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+  width: 40%;
+  color: #fff;
+  border-radius: 2px;
+  border: solid 1px #fff;
+  font-size: 16px;
+  margin: 0 30px 20px 30px;
+}
+
+.recruit-pcContact .recruit-pcBtn .r-pcBtn img {
+  position: absolute;
+  right: 5px;
+  width: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+.recruit-pcContact .recruit-pcBtn .line {
+  background-color: #13C610;
+}
+
+.recruit-pcContact .recruit-pcBtn .mail {
+  background-color: #C67210;
+}
+
+/*===========================================================*/
+/* 求人情報
+/*===========================================================*/
+.recruitInfo-Wrapper {
+  width: 90%;
+  max-width: 800px;
+}
+
+.cast-recruitInfo {
+  background: #6a0000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6a0000), to(#c90808));
+  background: linear-gradient(0deg, #6a0000 0%, #c90808 100%);
+}
+
+.recruitInfo-Title {
+  width: 100%;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1px;
+}
+
+.recruitInfo-Head {
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 20px;
+  font-family: heisei-mincho-std,serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+}
+
+.recruitInfo-Head:before,
+.recruitInfo-Head:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.recruitInfo-Head:before {
+  left: 0;
+}
+
+.recruitInfo-Head:after {
+  right: 0;
+}
+
+.mens-recruitInfo {
+  background: #000a53;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000a53), to(#0045ff));
+  background: linear-gradient(0deg, #000a53 0%, #0045ff 100%);
+  margin-top: 50px;
+}
+
+.recruitTable {
+  width: 100%;
+  font-size: 13px;
+  line-height: 20px;
+  border-collapse: collapse;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+}
+
+.recruitTable th {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  width: 25%;
+  border-collapse: collapse;
+  border: 1px solid #333;
+  padding: 0 10px;
+}
+
+.recruitTable td {
+  border-collapse: collapse;
+  border: 1px solid #333;
+  padding: 30px 10px;
+}
+
+/*===========================================================*/
+/* スマホで消す
+/*===========================================================*/
+@media (max-width: 767px) {
+  .recruit-pcContact {
+    display: none;
+  }
+}
+/*# sourceMappingURL=recruit.css.map */
