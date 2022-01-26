@@ -20,7 +20,11 @@
   margin: 10px 3px;
 }
 
-.castList li .castPhoto {
+.castList li a {
+  background-color: black;
+}
+
+.castList li img {
   height: 140px;
   border-radius: 3px;
   -webkit-box-shadow: 0 0 3px #adadad;
@@ -30,6 +34,11 @@
 .castList li .name {
   font-size: 13px;
   margin-top: 5px;
+}
+
+.castList li a:hover {
+  background-color: black;
+  opacity: 0.6;
 }
 
 @media (min-width: 550px) {

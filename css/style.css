@@ -80,7 +80,7 @@ h2 {
   top: -120%;
   left: 0;
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   /*ナビの高さ*/
   background: #e9e9e9;
   /*動き*/
@@ -99,7 +99,7 @@ h2 {
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   /*表示する高さ*/
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -131,6 +131,12 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
+}
+
+.g-nav-sub {
+  font-size: 8px;
+  padding: 3px;
+  font-weight: normal;
 }
 
 /*========= ボタンのためのCSS ===============*/
@@ -319,7 +325,7 @@ h2:before {
 }
 
 .slider {
-  margin: 0 auto 50px auto !important;
+  margin-bottom: 50px !important;
   width: 80%;
   max-width: 500px;
   border: 5px solid #afaeae;
@@ -328,12 +334,17 @@ h2:before {
 .slider img {
   height: auto;
   width: 100%;
+  height: auto;
 }
 
 /*slick setting*/
 .slick-prev:before,
 .slick-next:before {
   color: #000;
+}
+
+ul .slick-dots {
+  bottom: -33px;
 }
 
 /*===========================================================*/
@@ -398,7 +409,7 @@ h2:before {
   width: 85%;
   max-width: 700px;
   display: table;
-  font-size: 13px;
+  font-size: 12px;
   margin: 1px auto 20px auto;
   border-collapse: collapse;
   border: 1px solid #333;
@@ -424,7 +435,8 @@ h2:before {
 }
 
 .Table td p {
-  line-height: 30px;
+  line-height: 20px;
+  padding: 5px;
 }
 
 .Table .tableBottom {
@@ -469,6 +481,11 @@ h2:before {
   -o-object-fit: cover;
      object-fit: cover;
   width: 95%;
+  background-color: black;
+}
+
+.shopPhoto a:hover {
+  opacity: 0.6;
 }
 
 /*===========================================================*/
@@ -476,6 +493,7 @@ h2:before {
 /*===========================================================*/
 .accessTable td {
   font-weight: normal;
+  line-height: 20px;
 }
 
 .mapWrapper {
@@ -500,6 +518,7 @@ h2:before {
           justify-content: center;
   margin: 0 auto;
   max-width: 500px;
+  background-color: black;
 }
 
 .r-wrapper img {
@@ -507,14 +526,18 @@ h2:before {
   margin: 0 auto;
 }
 
+.r-wrapper a:hover {
+  opacity: 0.6;
+}
+
 /*===========================================================*/
 /* フッター
 /*===========================================================*/
 .footerText {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 footer {
@@ -549,15 +572,15 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 12px 0;
+  padding: 12px 0 8px 0;
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   border-collapse: collapse;
   border: 1px solid #fff;
 }
 
 .f-BtnWrapper img {
-  width: 23px;
+  width: 21px;
   margin-bottom: 5px;
 }
 
@@ -765,6 +788,9 @@ footer {
   }
   h2 {
     margin: 0 auto 70px auto;
+  }
+  .Table {
+    font-size: 14px;
   }
   footer {
     display: none;
