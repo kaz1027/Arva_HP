@@ -113,7 +113,7 @@
                 margin-right: 5px;
             }
             .tel {
-                font-size: 50px;
+                font-size: 45px;
                 font-family: toppan-bunkyu-midashi-min-st,serif;
                 font-weight: 900;
                 font-style: normal;
@@ -156,7 +156,7 @@
 }
 
 /*===========================================================*/
-/* 求人情報
+/* 求人情報（テーブル）
 /*===========================================================*/
 
 .recruitInfo-Wrapper {
@@ -217,8 +217,8 @@
 
 .recruitTable {
     width: 100%;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 22px;
     border-collapse: collapse;
     border:1px solid #333;
     margin-bottom: 10px;
@@ -240,9 +240,81 @@
     }
 }
 
+.jobType {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 5px 0;
+}
+
+.tablePay {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*===========================================================*/
+/* フッター
+/*===========================================================*/
+
+.recruit-footer {
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.recruitFooter-Text {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    p {
+        font-size: 9px;
+        padding: 5px 0;
+    }
+}
+
+.recruitTelBtn {
+    background-color: #00CBC3;
+}
+.recruitMailBtn {
+    background-color: #FFA346;
+}
+.recruitLineBtn {
+    background-color: #13C610;
+}
+
+/*===========================================================*/
+/* PC画面
+/*===========================================================*/
+@media (min-width:767px) {
+    .recruitTable {
+        th {
+            font-size: 14px;
+        }
+        td {
+            font-size: 14px;
+            padding: 30px 20px;
+        }
+    }
+    .recruitDrection {
+        .recruitDrectionContents {
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .recruitInfo-Head {
+        font-size: 25px;
+    }
+}
+
 /*===========================================================*/
 /* スマホで消す
 /*===========================================================*/
+
 
 @media (max-width: 767px) {
     .recruit-pcContact {

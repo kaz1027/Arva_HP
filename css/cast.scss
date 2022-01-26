@@ -12,7 +12,10 @@
     li {
         text-align: center;
         margin: 10px 3px;
-        .castPhoto {
+        a {
+            background-color: black;
+        }
+        img {
             height: 140px;
             border-radius: 3px;
             box-shadow: 0 0 3px rgb(173, 173, 173);
@@ -22,6 +25,11 @@
             margin-top: 5px;
         }
     }
+}
+
+.castList li a:hover  {
+    background-color: black;
+    opacity: 0.6;
 }
 
 @media (min-width: 550px) {
