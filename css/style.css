@@ -37,11 +37,6 @@ h1 img {
   margin-left: 20px;
 }
 
-.snsIcon img {
-  width: 25px;
-  margin-left: 5px;
-}
-
 h2 {
   font-family: 'AvantGarde-Demi', sans-serif;
 }
@@ -53,7 +48,7 @@ h2 {
   z-index: 99;
   width: 100%;
   background-color: #4E7500;
-  height: 70px;
+  height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,6 +64,24 @@ h2 {
 
 #mob-header .snsWrapper {
   margin-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mob-header .snsWrapper .mob-twitterIcon {
+  width: 26px;
+}
+
+#mob-header .snsWrapper .mob-instaIcon {
+  width: 25px;
+  margin-left: 7px;
 }
 
 /*========= ナビゲーションのためのCSS ===============*/
@@ -144,7 +157,7 @@ h2 {
   position: fixed;
   z-index: 9999999999;
   /*ボタンを最前面に*/
-  top: 10px;
+  top: 8px;
   right: 10px;
   cursor: pointer;
   width: 50px;
@@ -200,15 +213,16 @@ h2 {
   z-index: 9;
   background-color: #000;
   color: #fff;
-  font-size: 9px;
+  font-size: 10px;
   width: 100%;
   position: fixed;
-  top: 70px;
+  top: 65px;
   text-align: center;
+  font-weight: bold;
 }
 
 .header-text p {
-  line-height: 25px;
+  line-height: 23px;
 }
 
 #top-bannar {
@@ -328,7 +342,6 @@ h2:before {
   margin-bottom: 50px !important;
   width: 80%;
   max-width: 500px;
-  border: 5px solid #afaeae;
 }
 
 .slider img {
@@ -443,6 +456,12 @@ ul .slick-dots {
   border-bottom: none;
 }
 
+.taxText {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .credit {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,7 +537,7 @@ ul .slick-dots {
           justify-content: center;
   margin: 0 auto;
   max-width: 500px;
-  background-color: black;
+  border: none;
 }
 
 .r-wrapper img {
@@ -577,6 +596,7 @@ footer {
   font-size: 12px;
   border-collapse: collapse;
   border: 1px solid #fff;
+  font-weight: bold;
 }
 
 .f-BtnWrapper img {
@@ -704,9 +724,12 @@ footer {
             align-items: center;
     padding: 0;
   }
-  .gnavi .h-sns img {
+  .gnavi .h-sns .icon_twitter {
+    width: 21px;
+  }
+  .gnavi .h-sns .icon_insta {
     width: 20px;
-    margin-left: 5px;
+    margin-left: 7px;
     padding: 0;
   }
   .gnavi .pcHeader-sns {

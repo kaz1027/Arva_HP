@@ -267,8 +267,9 @@
     background-color: #000;
     color: #fff;
     p {
-        font-size: 9px;
-        padding: 5px 0;
+        font-size: 10px;
+        line-height: 23px;
+        font-weight: bold;
     }
 }
 
@@ -280,6 +281,9 @@
 }
 .recruitLineBtn {
     background-color: #13C610;
+    img {
+        height: 21px;
+    }
 }
 
 /*===========================================================*/
