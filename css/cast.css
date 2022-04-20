@@ -20,10 +20,6 @@
   margin: 10px 3px;
 }
 
-.castList li a {
-  background-color: black;
-}
-
 .castList li img {
   height: 140px;
   border-radius: 3px;

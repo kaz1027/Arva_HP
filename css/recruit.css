@@ -314,8 +314,9 @@
 }
 
 .recruitFooter-Text p {
-  font-size: 9px;
-  padding: 5px 0;
+  font-size: 10px;
+  line-height: 23px;
+  font-weight: bold;
 }
 
 .recruitTelBtn {
@@ -328,6 +329,10 @@
 
 .recruitLineBtn {
   background-color: #13C610;
+}
+
+.recruitLineBtn img {
+  height: 21px;
 }
 
 /*===========================================================*/
